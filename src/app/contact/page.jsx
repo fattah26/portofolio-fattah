@@ -47,19 +47,19 @@ export default function Contact() {
         <div className="mt-4 lg:w-1/2 lg:text-left">
           <div>
             <h1 className="text-2xl sm:text-4xl lg:text-5xl text-neutral-800 dark:text-secondary font-bold">
-              "Let’s Talk"
+              Let’s Talk
             </h1>
             <p className="mt-4 text-neutral-600 dark:text-text md:text-lg md:mt-6">
-              "Do you have an idea or need help? Contact me, I'd love to hear about your project and provide assistance."
+              Do you have an idea or need help? Contact me, I'd love to hear about your project and provide assistance.
             </p>
           </div>
 
           <div className="mt-6 lg:mt-10">
             <h1 className="text-xl sm:text-4xl lg:text-2xl text-neutral-800 dark:text-secondary font-bold">
-              "Email"
+              Email
             </h1>
             <p className="text-sm font-medium mt-2 text-neutral-600 dark:text-text lg:text-lg ">
-              "fattaharif26@gmail.com"
+              fattaharif26@gmail.com
             </p>
           </div>
         </div>
