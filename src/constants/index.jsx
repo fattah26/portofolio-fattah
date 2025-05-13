@@ -81,6 +81,36 @@ export const TECH = [
     name: "NextJS",
     alt: "NextJS logo",
   },
+    {
+    id: "8",
+    src: "/images/Tech Stack/reactjs.svg",
+    name: "ReactJS",
+    alt: "ReactJS logo",
+  },
+    {
+    id: "9",
+    src: "/images/Tech Stack/laravel.svg",
+    name: "Laravel",
+    alt: "Laravel logo",
+  },
+    {
+    id: "10",
+    src: "/images/Tech Stack/mysql.svg",
+    name: "Mysql",
+    alt: "Mysql logo",
+  },
+    {
+    id: "11",
+    src: "/images/Tech Stack/figma.svg",
+    name: "Figma",
+    alt: "Figma logo",
+  },
+      {
+    id: "12",
+    src: "/images/Tech Stack/canva (1).svg",
+    name: "Canva",
+    alt: "Canva logo",
+  },
 ];
 
 export const PROJECTS_FE = [
