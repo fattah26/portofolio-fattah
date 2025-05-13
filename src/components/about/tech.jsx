@@ -25,7 +25,7 @@ export default function Tech() {
                                 alt={tec.alt}
                                 width={80}
                                 height={80}
-                                className="w-10 h-10 lg:w-20 lg:h-20 transition-transform duration-300 ease-in-out filter hover:brightness-0 dark:hover:brightness-0 dark:invert"
+                                className="w-10 h-10 lg:w-20 lg:h-20 transition-transform duration-300 ease-in-out filter hover: hover:brightness-0 dark:hover:brightness-0 dark:invert"
                             />
                         </Tippy>
                     </div>

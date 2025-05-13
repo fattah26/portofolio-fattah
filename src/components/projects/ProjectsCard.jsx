@@ -1,0 +1,94 @@
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
+import VisibilityIcon from "@mui/icons-material/Visibility";
+import CloseIcon from "@mui/icons-material/Close";
+
+export default function ProjectCard({ project }) {
+  const [showPreview, setShowPreview] = useState(false);
+
+  const openPreview = () => {
+    setShowPreview(true);
+  };
+
+  const closePreview = () => {
+    setShowPreview(false);
+  };
+
+  return (
+    <>
+      <div className="bg-white dark:bg-zinc-900 border-2 border-dashed border-gray-400 dark:border-gray-600 rounded-2xl p-4 shadow-md hover:shadow-xl transition-transform flex flex-col justify-between min-h-[450px]">
+        <div>
+          <div
+            className="w-full h-52 relative cursor-pointer rounded-xl overflow-hidden group"
+            onClick={openPreview}
+          >
+            <Image
+              src={project.img}
+              alt={project.name}
+              width={400}
+              height={250}
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+              <VisibilityIcon />
+            </div>
+          </div>
+          <div className="mt-4">
+            <h3 className="text-xl font-semibold text-neutral-800 dark:text-white">
+              {project.name}
+            </h3>
+            <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">
+              {project.description}
+            </p>
+          </div>
+        </div>
+        <div className="mt-6">
+          {project.path !== "-" ? (
+            <Link href={project.path} target="_blank" passHref>
+              <button className="w-full bg-primary font-semibold text-tertiary px-5 py-2 rounded-full shadow hover:bg-[#f5c23d] transition-all duration-300 hover:shadow-md">
+                View Project
+              </button>
+            </Link>
+          ) : (
+            <button
+              className="w-full bg-gray-400 font-semibold text-tertiary px-5 py-2 rounded-full shadow cursor-not-allowed opacity-70"
+              disabled
+            >
+              Not Available
+            </button>
+          )}
+        </div>
+      </div>
+
+      {/* Image Preview Modal */}
+      {showPreview && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center p-4"
+          onClick={closePreview}
+        >
+          <div className="relative" onClick={(e) => e.stopPropagation()}>
+            <img
+              src={project.img}
+              alt={project.name}
+              className="max-w-[100vw] max-h-[95vh] object-contain rounded-lg"
+            />
+            <button
+              className="absolute top-4 right-4 bg-primary text-tertiary w-10 h-10 rounded-full flex items-center justify-center shadow-lg hover:bg-[#f5c23d] transition-colors z-10"
+              onClick={closePreview}
+            >
+              <CloseIcon />
+            </button>
+            <div className="absolute bottom-4 left-0 right-0 text-center">
+              <span className="bg-black bg-opacity-70 text-white px-4 py-2 rounded-full inline-block">
+                {project.name}
+              </span>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
+  );
+}

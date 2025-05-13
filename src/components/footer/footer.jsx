@@ -63,7 +63,7 @@ export default function Footer() {
       </div>
 
         <div className="w-full mt-7 border-t-[1px] border-stroke pt-6 pb-8 text-center items-center text-xs">
-          <h2>©2024, All right reserved.</h2>
+          <h2>©2025, All right reserved.</h2>
         </div>
     </footer>
   );
