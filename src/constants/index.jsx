@@ -91,6 +91,9 @@ export const PROJECTS_FE = [
       "A professional company profile website created for PT Rapier Technology International to showcase their services and brand identity.",
     img: "/images/Projects/Company Profile Rapier.png",
     path: "https://landing-rapier.vercel.app/",
+    tech: ["React JS", "Next JS", "Tailwind CSS"],
+    github: "-"
+
   },
   {
     id: "2",
@@ -99,6 +102,9 @@ export const PROJECTS_FE = [
       "A custom content management system built for Rapier, designed to manage and update website content efficiently and intuitively.",
     img: "/images/Projects/CMS Rapier.png",
     path: "https://cms-rapier.vercel.app/login",
+    tech: ["React JS", "Next JS", "Tailwind CSS"],
+    github: "-"
+
   },
   {
     id: "3",
@@ -107,13 +113,18 @@ export const PROJECTS_FE = [
       "A clean and modern portfolio site designed to highlight my projects, skills, and experience as a front-end developer.",
     img: "/images/Projects/WebsitePortfolio.png",
     path: "https://fattaharf-portfolio.vercel.app/",
+    tech: ["React JS", "Next JS", "Tailwind CSS"],
+    github: "https://github.com/fattah26/portofolio-fattah.git"
   },
   {
     id: "4",
     name: "Student Management System",
-    description: "A comprehensive student registration management system developed as my final school project. Built with Laravel backend and Inertia.js for the frontend, providing an efficient solution for student enrollment processes.",
+    description:
+      "A comprehensive student registration management system developed as my final school project. Built with Laravel backend and Inertia.js for the frontend, providing an efficient solution for student enrollment processes.",
     img: "/images/Projects/Student Management.png",
     path: "https://github.com/fattah26/pendaftaran-siswa.git",
+    tech: ["Laravel", "Inertia JS", "Mysql", "Tailwind CSS"],
+    github: "-"
   },
 ];
 
@@ -121,8 +132,10 @@ export const PROJECTS_UI = [
   {
     id: "1",
     name: "Student Management System",
-    description: "A user-focused UI/UX design for a student registration platform. Features an intuitive dashboard, streamlined enrollment flow, and responsive interface designed to enhance administrative efficiency and student user experience.",
+    description:
+      "A user-focused UI/UX design for a student registration platform. Features an intuitive dashboard, streamlined enrollment flow, and responsive interface designed to enhance administrative efficiency and student user experience.",
     img: "/images/Projects/Student Management.png",
     path: "https://www.figma.com/design/xidmNROUFP73Q2mfyUdmmy/Project-Student-Management-System?node-id=63-10199&t=QZklZ1yx1t4sjXdV-1",
+    tech: ["Figma"],
   },
 ];
