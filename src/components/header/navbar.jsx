@@ -16,7 +16,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="w-full h-fit max-w-5xl mx-auto relative flex justify-between lg:justify-center items-center my-4 px-6 lg:px-0">
+    <nav className="w-full h-fit max-w-5xl mx-auto relative flex gap-2 md:gap-0 justify-between lg:justify-center items-center my-4 px-6 lg:px-0">
       <div className="relative flex bg-secondary dark:bg-tertiary outline-neutral-200 dark:outline-stroke outline-1 hover:outline-2 outline w-fit rounded-full font-semibold text-xs md:text-sm text-neutral-800 dark:text-secondary">
         {NAVIGATION.map((navigation, index) => (
           <motion.div

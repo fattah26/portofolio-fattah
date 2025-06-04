@@ -32,8 +32,8 @@ export const SOCIALS = [
   },
   {
     name: "LinkedIn",
-    username: "-",
-    url: "-",
+    username: "Fattah Arif Nugroho",
+    url: "https://www.linkedin.com/in/fattaharifnugroho/",
     src: "/images/LinkedIn.svg",
   },
 ];
