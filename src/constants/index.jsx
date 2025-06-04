@@ -183,8 +183,8 @@ export const PROJECTS_CERTIFICATE = [
     id: "1",
     name: "Web Developer Internship",
     description:
-      "Certificate of completion for a 6-month internship as a Frontend Developer at PT. Rapier Technology International. ",
-    img: "/images/Projects/Student Management.png",
+      "Certificate of completion of internship as Frontend Developer at PT. Rapier Technology International.",
+    img: "/images/Projects/Sertifkat Magang.jpg",
     path: "-",
     tech: ["Frontend Dev"],
   },

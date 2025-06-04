@@ -7,7 +7,7 @@ import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
 export default function Tech() {
   return (
-    <section className="mt-10 lg:mt-20">
+    <section className="mt-16 lg:mt-32">
       <div className="flex flex-wrap w-full gap-10 lg:gap-20">
         {TECH.map((tec) => (
             <motion.div
