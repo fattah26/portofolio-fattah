@@ -8,7 +8,7 @@ export default function Home() {
       <div className="w-full flex flex-col lg:flex-row-reverse items-center gap-6 lg:gap-24 px-4 sm:px-8 md:px-12 lg:px-4">
         <div className="relative aspect-square w-28 sm:w-36 md:w-44 lg:w-[420px] rounded-full overflow-hidden outline outline-4 outline-neutral-200 dark:outline-neutral-700 shadow">
           <Image
-            src="/images/profile.png"
+            src="/images/profile2.png"
             alt="me"
             width={0}
             height={0}

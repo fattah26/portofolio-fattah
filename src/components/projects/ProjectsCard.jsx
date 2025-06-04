@@ -19,7 +19,7 @@ export default function ProjectCard({ project, button = true }) {
         <div>
           {/* Gambar Project */}
           <div
-            className="w-full h-52 relative cursor-pointer rounded-xl overflow-hidden group"
+            className="w-full h-44 relative cursor-pointer rounded-xl overflow-hidden group"
             onClick={openPreview}
           >
             <Image
@@ -46,7 +46,7 @@ export default function ProjectCard({ project, button = true }) {
         </div>
 
         {/* Tech */}
-        <div className="flex flex-wrap gap-2 mt-4">
+        <div className="flex flex-wrap gap-2 mt-2">
           {project.tech?.map((item, index) => (
             <span
               key={index}
@@ -59,7 +59,7 @@ export default function ProjectCard({ project, button = true }) {
 
         {/* Tombol View Project & GitHub */}
         {button && (
-          <div className="mt-6 flex gap-3">
+          <div className="mt-4 flex gap-3">
             {project.path !== "-" ? (
               <Link
                 href={project.path}
