@@ -9,7 +9,7 @@ export default function Footer() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
-    <footer className="">
+    <footer className="mt-10">
       <div className="flex flex-wrap justify-between items-center mx-6 lg:mx-20">
          {/* Bagian Sosial Media */}
             <div className="flex gap-6 w-full md:w-auto md:justify-start mt-5 lg:mt-6">
