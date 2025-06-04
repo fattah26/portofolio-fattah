@@ -35,7 +35,7 @@ export default function Projects() {
 
         <div>
           <h2 className="items-center flex gap-1 text-2xl font-semibold text-neutral-800 dark:text-secondary mb-6">
-            <TaskIcon fontSize="large"/>Certificate
+            <TaskIcon fontSize="large"/>Certificates
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {PROJECTS_CERTIFICATE.map((project) => (
