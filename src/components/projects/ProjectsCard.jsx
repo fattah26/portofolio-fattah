@@ -7,7 +7,7 @@ import VisibilityIcon from "@mui/icons-material/Visibility";
 import CloseIcon from "@mui/icons-material/Close";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
-export default function ProjectCard({ project }) {
+export default function ProjectCard({ project, button = true }) {
   const [showPreview, setShowPreview] = useState(false);
 
   const openPreview = () => setShowPreview(true);
@@ -39,7 +39,7 @@ export default function ProjectCard({ project }) {
             <h3 className="text-xl font-semibold text-neutral-800 dark:text-white">
               {project.name}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-gray-300">
+            <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
               {project.description}
             </p>
           </div>
@@ -58,45 +58,46 @@ export default function ProjectCard({ project }) {
         </div>
 
         {/* Tombol View Project & GitHub */}
-        <div className="mt-6 flex gap-3">
-          {project.path !== "-" ? (
-            <Link
-              href={project.path}
-              target="_blank"
-              className={
-                project.github && project.github !== "-"
-                  ? "basis-[70%]"
-                  : "w-full"
-              }
-            >
-              <button className="w-full bg-primary font-semibold text-tertiary px-5 py-2 rounded-full shadow hover:bg-[#f5c23d] transition-all duration-300 hover:shadow-md">
-                View Project
+        {button && (
+          <div className="mt-6 flex gap-3">
+            {project.path !== "-" ? (
+              <Link
+                href={project.path}
+                target="_blank"
+                className={
+                  project.github && project.github !== "-"
+                    ? "basis-[70%]"
+                    : "w-full"
+                }
+              >
+                <button className="w-full bg-primary font-semibold text-tertiary px-5 py-2 rounded-full shadow hover:bg-[#f5c23d] transition-all duration-300 hover:shadow-md">
+                  View Project
+                </button>
+              </Link>
+            ) : (
+              <button
+                disabled
+                className={`bg-gray-400 font-semibold text-tertiary px-5 py-2 rounded-full shadow cursor-not-allowed opacity-70 ${
+                  project.github && project.github !== "-"
+                    ? "basis-[70%]"
+                    : "w-full"
+                }`}
+              >
+                Not Available
               </button>
-            </Link>
-          ) : (
-            <button
-              className={
-                project.github && project.github !== "-"
-                  ? "basis-[70%]"
-                  : "w-full"
-              }
-              disabled
-              className="bg-gray-400 font-semibold text-tertiary px-5 py-2 rounded-full shadow cursor-not-allowed opacity-70"
-            >
-              Not Available
-            </button>
-          )}
+            )}
 
-          {/* Tombol GitHub */}
-          {project.github && project.github !== "-" && (
-            <Link href={project.github} target="_blank" className="flex-1">
-              <button className="w-full bg-neutral-800 text-white font-semibold px-5 py-2 rounded-full shadow hover:bg-black transition-all duration-300 hover:shadow-md flex items-center justify-center gap-2">
-                <GitHubIcon />
-                GitHub
-              </button>
-            </Link>
-          )}
-        </div>
+            {/* Tombol GitHub */}
+            {project.github && project.github !== "-" && (
+              <Link href={project.github} target="_blank" className="flex-1">
+                <button className="w-full bg-neutral-800 text-white font-semibold px-5 py-2 rounded-full shadow hover:bg-black transition-all duration-300 hover:shadow-md flex items-center justify-center gap-2">
+                  <GitHubIcon />
+                  {/* Github */}
+                </button>
+              </Link>
+            )}
+          </div>
+        )}
       </div>
 
       {/* Modal Preview */}

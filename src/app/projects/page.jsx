@@ -1,4 +1,4 @@
-import { PROJECTS_FE, PROJECTS_UI  } from "@/constants";
+import { PROJECTS_CERTIFICATE, PROJECTS_FE, PROJECTS_UI } from "@/constants";
 import ProjectCard from "@/components/projects/ProjectsCard";
 
 export default function Projects() {
@@ -27,6 +27,17 @@ export default function Projects() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {PROJECTS_UI.map((project) => (
               <ProjectCard key={project.id} project={project} />
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-semibold text-neutral-800 dark:text-secondary mb-6">
+            Certificate
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {PROJECTS_CERTIFICATE.map((project) => (
+              <ProjectCard key={project.id} project={project} button={false}/>
             ))}
           </div>
         </div>

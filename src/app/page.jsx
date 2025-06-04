@@ -23,7 +23,7 @@ export default function Home() {
           </h1>
           <p className="mt-4 text-neutral-600 dark:text-text md:text-lg md:mt-6">
             {
-              "I'm Fattah Arif Nugroho, a student, and a budding software engineer from Semarang, Indonesia."
+              "I am Fattah Arif Nugroho, a student, and a software engineer from Semarang, Indonesia."
             }
           </p>
         </div>

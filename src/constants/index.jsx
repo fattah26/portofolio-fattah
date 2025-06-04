@@ -152,9 +152,9 @@ export const PROJECTS_FE = [
     description:
       "A comprehensive student registration management system developed as my final school project. Built with Laravel backend and Inertia.js for the frontend, providing an efficient solution for student enrollment processes.",
     img: "/images/Projects/Student Management.png",
-    path: "https://github.com/fattah26/pendaftaran-siswa.git",
+    path: "-",
     tech: ["Laravel", "Inertia JS", "Mysql", "Tailwind CSS"],
-    github: "-"
+    github: "https://github.com/fattah26/pendaftaran-siswa.git"
   },
 ];
 
@@ -167,5 +167,18 @@ export const PROJECTS_UI = [
     img: "/images/Projects/Student Management.png",
     path: "https://www.figma.com/design/xidmNROUFP73Q2mfyUdmmy/Project-Student-Management-System?node-id=63-10199&t=QZklZ1yx1t4sjXdV-1",
     tech: ["Figma"],
+  },
+];
+
+
+export const PROJECTS_CERTIFICATE = [
+  {
+    id: "1",
+    name: "Web Developer Internship",
+    description:
+      "Certificate of completion for a 6-month internship as a Frontend Developer at PT. Rapier Technology International. ",
+    img: "/images/Projects/Student Management.png",
+    path: "-",
+     tech: ["Frontend Dev"],
   },
 ];
