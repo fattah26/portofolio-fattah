@@ -24,10 +24,13 @@ export default function AboutMe() {
           Frontend Developer."
         </h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-justify mt-5 lg:mt-6">
-          Hi, I am a Software Engineering student who is delving into the world
-          of web development. I understand front-end frameworks like Next.js and
-          Node.js with JavaScript. I want to continue learning and deepen my
-          knowledge of new technologies.
+          Hi, I'm Fattah Arif Nugroho - a software engineering student and
+          frontend developer from Semarang, Indonesia. frontend developer from
+          Semarang, Indonesia. I'm currently exploring the world of web
+          development, with a focus on modern frameworks such as Next.js and
+          React.js and sometimes using laravel. I'm used to building
+          user-friendly interfaces and I enjoy learning new technologies to
+          improve my skills every day.
         </p>
 
         <div className="flex gap-6 w-full md:w-auto md:justify-start mt-5 lg:mt-6">
